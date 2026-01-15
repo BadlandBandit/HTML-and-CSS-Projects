@@ -1,4 +1,4 @@
 # HTML-and-CSS-Projects
 
-AOL assignments test
+AOL assignments
 
