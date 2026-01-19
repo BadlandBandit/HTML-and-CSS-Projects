@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUGLIFE - The Ultimate Pug Community</title>
+    
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        /* Navbar styling */
+        .navbar {
+            background: linear-gradient(135deg, #f4c2c2 0%, #d4a5a5 100%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: #000 !important;
+        }
+        
+        /* Hero section */
+        .hero {
+            background: linear-gradient(135deg, #f4c2c2 0%, #d4a5a5 100%);
+            color: #000;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        
+        /* Card styling */
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        /* Section styling */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .btn-primary {
+            background-color: #c9757d;
+            border-color: #c9757d;
+        }
+        
+        .btn-primary:hover {
+            background-color: #a85a62;
+            border-color: #a85a62;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-link {
+            color: #f4c2c2;
+            text-decoration: none;
+        }
+        
+        .footer-link:hover {
+            color: #fff;
+        }
+        
+        /* Form styling */
+        .form-control {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .form-control:focus {
+            border-color: #c9757d;
+            box-shadow: 0 0 0 0.2rem rgba(201, 117, 125, 0.25);
+        }
+        
+        /* Feature icons */
+        .feature-icon {
+            font-size: 3rem;
+            color: #c9757d;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-paw"></i> PUGLIFE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1><i class="fas fa-paw"></i> PUGLIFE <i class="fas fa-paw"></i></h1>
+            <p>Embrace the Pug Lifestyle - Where Cute Meets Cuddly</p>
+            <a href="#gallery" class="btn btn-primary btn-lg">Explore Our Pugs</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Meet Our Pug Friends</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://image.petmd.com/files/styles/978x550/public/2022-10/pug-dog-breed.jpeg?w=1080&q=75" class="card-img-top" alt="Pug 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Buddy</h5>
+                            <p class="card-text">Buddy loves to play and cuddle with his best friends. Always smiling!</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.happypet.care/images/20178/pug-dog-portrait.webp" class="card-img-top" alt="Pug 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Princess</h5>
+                            <p class="card-text">Princess is the royalty of pugs with her elegant personality and charm.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://pethelpful.com/.image/w_1080,q_auto:good,c_limit/MTk2NTc5NzcyMTMyNzYzNDU0/why-pugs-dogs-are-the-perfect-family-pet.png?arena_f_auto" class="card-img-top" alt="Pug 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Max</h5>
+                            <p class="card-text">Max is the life of the party and brings joy wherever he goes!</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title">Why Join PUGLIFE?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h5>Pure Love</h5>
+                    <p>Experience the unconditional love that only pugs can provide.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h5>Community</h5>
+                    <p>Connect with other pug enthusiasts from around the world.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5>Exclusive Content</h5>
+                    <p>Get access to pug tips, tricks, and hilarious moments daily.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="section-title">What Pug Lovers Say</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p>"PUGLIFE has changed my life! I've never felt more connected to the pug community."</p>
+                        <h6>- Sarah M.</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p>"My pug Morris is now a PUGLIFE celebrity! Highly recommended for all pug parents."</p>
+                        <h6>- John D.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your pug!" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PUGLIFE</h5>
+                    <p>Your one-stop destination for everything pug-related.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#gallery" class="footer-link">Gallery</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="footer-link mr-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-link mr-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-link mr-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2026 PUGLIFE. All rights reserved. <i class="fas fa-paw"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
