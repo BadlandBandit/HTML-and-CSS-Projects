@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Brent Helfenbein | Portfolio</title>
+
+    <!-- Use a RELATIVE path so it works when deployed -->
+    <link rel="stylesheet" type="text/css" href="CSS/portfolio.css" />
+  </head>
+
+  <!--Body-->
+  <body class="Background">
+    <!--Navbar-->
+    <div class="Navbar">
+      <a class="active" href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#GitHub">GitHub</a>
+      <a href="#Contact">Contact</a>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Background video-->
+    <div id="Home">
+      <video autoplay muted loop id="Typing_Video">
+        <source src="images/video/Typing.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+      <h1 class="white-text">Hi, I’m Brent Helfenbein.</h1>
+      <strong>
+        <p class="center">
+          <q>
+            The computer programmer is a creator of universes for which he alone is the lawgiver.
+            <br />
+            No playwright, no stage director, no emperor, however powerful, has ever exercised such
+            absolute authority...
+          </q>
+          <br />
+          <span>— Joseph Weizenbaum</span>
+          <br /><br />
+
+          I build clean, practical software and I love the puzzle-solving side of development.
+          <br />
+          When I’m not coding, I’m usually hanging out with my two kids, planning the next trip, or
+          tinkering with a new project idea.
+          <br /><br />
+
+          Take a look around — you’ll find a little about me, my work, and how to reach me.
+        </p>
+      </strong>
+    </div>
+
+    <!--About section-->
+    <div class="Row" id="About">
+      <!--Left column-->
+      <div class="Column_2">
+        <!-- Consider swapping this for a photo of you, or a project screenshot -->
+        <img
+          src="https://images.pexels.com/photos/14553720/pexels-photo-14553720.jpeg"
+          alt="HTML code on a screen"
+        />
+      </div>
+
+      <!--Right column-->
+      <div class="Column_1">
+        <h1>About</h1>
+        <p>
+          I’m a software developer who genuinely enjoys building things that make life easier —
+          whether that’s a small tool, a full web app, or a clean backend that just works.
+          <br /><br />
+
+          I graduated from
+          <a href="https://www.learncodinganywhere.com" target="_blank" rel="noopener noreferrer">
+            The Tech Academy
+          </a>
+          Software Developer Boot Camp and I’ve trained in HTML, CSS, JavaScript, SQL, C# and more.
+          <br /><br />
+
+          I’m especially interested in full-stack development and I’m always sharpening my skills:
+          cleaner code, better UI, stronger architecture, and shipping projects that feel polished.
+          <br /><br />
+
+          If you’re looking for someone who communicates clearly and takes pride in the details,
+          <a href="#Contact">reach out</a> — I’d love to hear what you’re working on.
+        </p>
+      </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+      <!--Left column-->
+      <div class="Column_1">
+        <h1>GitHub</h1>
+        <p>
+          Want to see what I’ve been building lately?
+          <br />
+          I keep my projects and code samples on GitHub:
+        </p>
+        <p class="center">
+          <a href="https://github.com/BadlandBandit" target="_blank" rel="noopener noreferrer">
+            github.com/BadlandBandit
+          </a>
+        </p>
+      </div>
+
+      <!--Right column-->
+      <div class="Column_2">
+        <a href="https://github.com/BadlandBandit" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
+            alt="GitHub logo"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="Row" id="Contact">
+      <!--Contact image, left column-->
+      <div class="Column_2 Column_tall">
+        <img
+          src="https://www.freepnglogos.com/uploads/email-png/download-blue-email-png-png-image-pngimg-10.png"
+          alt="Email icon"
+        />
+      </div>
+
+      <!--Contact form, right column-->
+      <div class="Column_1 Column_tall">
+        <h1>Contact</h1>
+        <p>
+          If you want to collaborate, have a question, or just want to connect, send me a message
+          here:
+        </p>
+
+        <form action="https://formspree.io/f/xgoolyga" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Your message:
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+      <p class="center">
+        &copy; <span id="year"></span> Brent Helfenbein • Built with HTML & CSS
+      </p>
+    </footer>
+
+    <!-- Small nice touch: auto-updating year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
