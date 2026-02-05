@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/one_page_website.css">
     <title>All About Pugs</title>
     <style>
         body {
@@ -66,9 +68,20 @@
     <!-- Pictures Section -->
     <section id="photos">
         <h2>Adorable Pug Photos</h2>
-        <img src="https://image.petmd.com/files/styles/978x550/public/2022-10/pug-dog-breed.jpeg?w=1080&q=75" alt="Cute pug strutting">
-        <img src="https://images.happypet.care/images/20178/pug-dog-portrait.webp" alt="Pug face close-up">
-        <img src="https://pethelpful.com/.image/w_1080,q_auto:good,c_limit/MTk2NTc5NzcyMTMyNzYzNDU0/why-pugs-dogs-are-the-perfect-family-pet.png?arena_f_auto" alt="Pug lying down">
+        <div class="lightbox-thumbnails">
+            <div class="lightbox-img-container">
+                <img class="lightbox-trigger" src="https://image.petmd.com/files/styles/978x550/public/2022-10/pug-dog-breed.jpeg?w=300&q=75" data-full="https://image.petmd.com/files/styles/978x550/public/2022-10/pug-dog-breed.jpeg?w=1080&q=75" alt="Cute pug strutting">
+                <span class="lightbox-hover-icon">&#128065;</span>
+            </div>
+            <div class="lightbox-img-container">
+                <img class="lightbox-trigger" src="https://images.happypet.care/images/20178/pug-dog-portrait.webp?width=300" data-full="https://images.happypet.care/images/20178/pug-dog-portrait.webp" alt="Pug face close-up">
+                <span class="lightbox-hover-icon">&#128065;</span>
+            </div>
+            <div class="lightbox-img-container">
+                <img class="lightbox-trigger" src="https://pethelpful.com/.image/w_300,q_auto:good,c_limit/MTk2NTc5NzcyMTMyNzYzNDU0/why-pugs-dogs-are-the-perfect-family-pet.png?arena_f_auto" data-full="https://pethelpful.com/.image/w_1080,q_auto:good,c_limit/MTk2NTc5NzcyMTMyNzYzNDU0/why-pugs-dogs-are-the-perfect-family-pet.png?arena_f_auto" alt="Pug lying down">
+                <span class="lightbox-hover-icon">&#128065;</span>
+            </div>
+        </div>
     </section>
 
     <!-- Video Section -->
@@ -102,4 +115,14 @@
     </footer>
 
 </body>
+<script src="JS/one_page_website.js"></script>
 </html>
+<!-- Lightbox Overlay -->
+<div id="lightbox-overlay" style="display:none;">
+    <div id="lightbox-modal">
+        <span id="lightbox-close">&times;</span>
+        <button id="lightbox-prev" class="lightbox-nav">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <button id="lightbox-next" class="lightbox-nav">&#10095;</button>
+    </div>
+</div>
