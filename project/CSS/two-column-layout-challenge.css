@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  .column {
+    height: auto;
+    width: auto;
+    display: block;
+  }
+}   
+
+div {
+  background-color: blue;
+  color: white;
+}

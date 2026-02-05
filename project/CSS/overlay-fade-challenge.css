@@ -1,0 +1,32 @@
+.img-container {
+  position: relative;
+  width: 400px;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 140, 186, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}

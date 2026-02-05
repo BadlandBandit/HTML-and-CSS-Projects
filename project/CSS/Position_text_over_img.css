@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  width: fit-content;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
